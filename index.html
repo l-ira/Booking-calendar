@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Booking</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<form>
+				<label for="date" class="form-title"
+					><h3>Choose date</h3></label
+				>
+				<div class="calendar">
+					<input
+						onchange="startChange(this)"
+						type="date"
+						name="firstDate"
+						min="2022-12-01"
+						max="2022-12-31"
+					/>
+					<input
+						onchange="endChange(this)"
+						type="date"
+						name="secondDate"
+						min="2022-12-01"
+						max="2022-12-31"
+					/>
+				</div>
+				<button class="form-button" type="submit" onclick="checkDate()">
+					Book
+				</button>
+			</form>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
